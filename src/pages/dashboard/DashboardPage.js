@@ -5,7 +5,21 @@ const Dashboard = () => {
     const navigate = useNavigate();
 
   return (
-    <div>Dashboard</div>
+    <div>
+      <nav>
+
+      </nav>
+      <div className="container">
+        <section className="sidebar">
+
+        </section>
+        <main>
+          
+        </main>
+
+      </div>
+      
+    </div>
   )
 }
 
