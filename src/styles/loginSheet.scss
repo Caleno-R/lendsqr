@@ -1,0 +1,118 @@
+$textColor: rgba(84, 95, 125, 1);
+$textColorFade: rgba(84, 95, 125, .15);
+$containerBackgroundColor: rgba(255, 255, 255, 1);
+$formFIeldWidth: 27.93rem;
+$formLinkColor: rgba(57, 205, 204, 1);
+$textColor2: rgba(255, 255, 255, 1);
+
+
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+}
+
+.login-logo-loti{
+    flex: 1;
+}
+.login-head-form{
+    flex: 1;
+    padding:6.25rem;
+}
+.login-head-info{
+    margin-bottom:3.75rem;
+}
+
+.login-head{
+    font-size:2.5rem;
+    font-weight: 700;
+    line-height:3.4rem;
+    letter-spacing:-0.04em;
+    color: #213F7D;
+}
+.login-info{
+    font-size:1.25rem;
+    font-weight: 400;
+    line-height: 1.69rem;
+    color: $textColor;
+}
+
+.login-form{
+
+}
+.form-email{
+    width:100%;
+}
+.form-password{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form-email .login-input{
+    width:100%;
+    border: 2px solid $textColorFade;
+}
+.login-input{
+    background-color: #ffffff;
+    border:2px solid $textColorFade;
+    border-right: none;
+    border-radius:5px 0 0 5px;
+    width: 100%;
+    height: 3.125rem;
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-form p{
+    margin-bottom: 1.5rem;
+}
+.form-password div{
+    display: inline;
+    text-transform: uppercase;
+    height: 3.125rem;
+    color: $formLinkColor;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .1em;
+    border:2px solid $textColorFade;
+    border-left: none;
+    padding: 1.04rem;
+
+}
+.forgot-password{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:12px;
+    line-height:1rem;
+    letter-spacing:.1em;
+    color: $formLinkColor;
+    text-decoration: none;
+    margin-bottom: 1.875rem;
+}
+
+.login-btn{
+    width: 100%;
+    background-color: $formLinkColor;
+    border-radius:.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: none;
+}
+.btn-text{
+    font-size:14px;
+    font-weight: 600;
+    line-height:19px;
+    text-transform: uppercase;
+    color: $textColor2;
+}
