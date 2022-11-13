@@ -23,6 +23,10 @@ $textColor2: rgba(255, 255, 255, 1);
 
 .login-logo-loti{
     flex: 1;
+    padding: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .login-head-form{
     flex: 1;
@@ -53,9 +57,10 @@ $textColor2: rgba(255, 255, 255, 1);
     width:100%;
 }
 .form-password{
+    position: relative;
     width:100%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 .form-email .login-input{
     width:100%;
@@ -64,32 +69,43 @@ $textColor2: rgba(255, 255, 255, 1);
 .login-input{
     background-color: #ffffff;
     border:2px solid $textColorFade;
-    border-right: none;
-    border-radius:5px 0 0 5px;
+    // border-right: none;
+    // border-radius:5px 0 0 5px;
+    border-radius: 5px;
     width: 100%;
     height: 3.125rem;
     font-size: 14px;
     line-height: 19px;
     padding-left: 1rem;
     margin-bottom: 1.5rem;
+    &:focus{
+        outline: none;
+    }
+}
+.form-password>button{
+    position: absolute;
+    right: 0;
+    padding-right: 18px;
+    text-transform: uppercase;
+    color: $formLinkColor;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .1em;
+    height: 3.125rem;
+    border: 2px solid $textColorFade;
+    border-left: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.pablo__flat__container{
+    width: 100%;
 }
 
 .login-form p{
     margin-bottom: 1.5rem;
 }
-.form-password div{
-    display: inline;
-    text-transform: uppercase;
-    height: 3.125rem;
-    color: $formLinkColor;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: .1em;
-    border:2px solid $textColorFade;
-    border-left: none;
-    padding: 1.04rem;
 
-}
 .forgot-password{
     text-transform: uppercase;
     font-weight: 600;
